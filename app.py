@@ -2,8 +2,6 @@ from flask import Flask
 from flask_cors import CORS
 from transformers import pipeline
 import os
-import tensorflow as tf
-
 app = Flask(__name__)
 
 @app.route('/')
