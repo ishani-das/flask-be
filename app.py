@@ -2,7 +2,11 @@ from flask import Flask
 from flask_cors import CORS
 from transformers import pipeline
 import os
+
 app = Flask(__name__)
+CORS(app) 
+
+summarizer = pipeline("summarization")
 
 @app.route('/')
 def home():
